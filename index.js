@@ -7,7 +7,6 @@ const path = require('path');
 const productRouterV2 = require('./app/productV2/router');
 const cors = require('cors');
 const port = process.env.PORT || 3001;
-require('dotenv').config();
 
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: true }));
