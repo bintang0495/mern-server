@@ -21,6 +21,16 @@ const store = (req, res) => {
     })
       .then((result) => res.send(result))
       .catch((error) => res.send(error));
+  } else {
+    Product.create({
+      name,
+      price,
+      stock,
+      status,
+      imageUrl: ``,
+    })
+      .then((result) => res.send(result))
+      .catch((error) => res.send(error));
   }
 };
 
